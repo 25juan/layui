@@ -616,7 +616,7 @@
     "laypage.home":"首页",
     "laypage.more":"...",
     "laypage.end":'尾页',
-    "laypage.loop": '到第',
+    "laypage.jumpText": '到第',
     "laypage.page":'页',
     "laypage.confirm":'确定',
     "laypage.total":'共',
