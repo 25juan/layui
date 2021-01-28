@@ -155,7 +155,7 @@ layui.define(function(exports){
           options.push(
             '<option value="'+ item +'"'
             +(item === config.limit ? 'selected' : '')
-            +'>'+ item +' 条/页</option>'
+            +'>'+ item + layui.i18n('laypage.per') +' </option>'
           );
         });
         return options.join('') +'</select></span>';
@@ -168,7 +168,7 @@ layui.define(function(exports){
 
       //跳页区域
       ,skip: function(){
-        return ['<span class="layui-laypage-skip">'+ config.jumpText || layui.i18n("laypage.jumpText"),'<input type="text" min="1" value="'+ config.curr +'" class="layui-input">'
+        return ['<span class="layui-laypage-skip">'+ layui.i18n("laypage.jumpText"),'<input type="text" min="1" value="'+ config.curr +'" class="layui-input">'
           , layui.i18n('laypage.page') +'<button type="button" class="layui-laypage-btn">'+layui.i18n('laypage.confirm')+'</button>'
         ,'</span>'].join('');
       }()
