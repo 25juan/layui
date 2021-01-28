@@ -622,7 +622,8 @@
     "laypage.total":'共',
     "laypage.unit":'条',
     "laypage.per":'条/页',
-    "table.none": '无数据'
+    "table.none": '无数据',
+    "laypage.curr.page":"页码"
   };
   /**
    * 国际化国际化

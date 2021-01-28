@@ -146,8 +146,13 @@ layui.define(function(exports){
       }()
 
       //数据总数
-      ,count: '<span class="layui-laypage-count">'+layui.i18n('laypage.total')+ config.count  +layui.i18n('laypage.unit') +'</span>'
-
+      ,count: (function () {
+          var list =[
+            '<span class="layui-laypage-count">'+layui.i18n('laypage.total')+ config.count  +layui.i18n('laypage.unit') +'</span>',
+            '<span class="layui-laypage-page">'+layui.i18n('laypage.curr.page')+ config.curr + ' / ' +config.pages +'</span>'
+          ]
+          return list.join("");
+        })()
       //每页条数
       ,limit: function(){
         var options = ['<span class="layui-laypage-limits"><select lay-ignore>'];
