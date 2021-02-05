@@ -149,7 +149,7 @@ layui.define(function(exports){
       ,count: (function () {
           var list =[
             '<span class="layui-laypage-count">'+layui.i18n('laypage.total')+ config.count  +layui.i18n('laypage.unit') +'</span>',
-            '<span class="layui-laypage-page">'+layui.i18n('laypage.curr.page')+ config.curr + ' / ' +config.pages +'</span>'
+            '<span class="layui-laypage-page"> <span class="layui-laypage-text">'+layui.i18n('laypage.curr.page')+"</span><span class='layui-laypage-curr'>"+ config.curr + '</span> <span class="layui-laypage-split">/</span> <span class="layui-laypage-total">' +config.pages +'</span></span>'
           ]
           return list.join("");
         })()
